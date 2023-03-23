@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: 'Savoye';
+    src: local('Savoye'), url('../font/Savoye.ttf');
+}
+
+@font-face {
+    font-family: 'Playfair';
+    src: local('Playfair'), url('../font/Playfair.ttf');
+}
+
+@font-face {
+    font-family: 'Danette';
+    src: local('Danette'), url('../font/Danette.ttf');
+}
+
+@font-face {
+    font-family: 'Lowan';
+    src: local('Lowan'), url('../font/Lowan.ttf');
+}
+
+@font-face {
+    font-family: 'Baskvl';
+    src: local('Baskvl'), url('../font/Baskvl.ttf');
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.name-text{
+    opacity: 0;
+    bottom: -30px;
+    animation: heading-text 0.5s linear 1s forwards;
+}
+
+@keyframes heading-text {
+    0%{
+        opacity: 0;
+        bottom: -30px; 
+    }
+    100%{
+        opacity: 1;
+        bottom: 0;
+    }
+}
+
+.tab-content::-webkit-scrollbar {
+    width: 3px;
+}
+   
+
+.tab-content::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+}
+
+input[type="radio"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    appearance: none;
+    /* For iOS < 15 to remove gradient background */
+    background-color: #fff;
+    /* Not removed via appearance */
+    margin: 0;
+}
+
+input[type="radio"] {
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    color: currentColor;
+    width: 1em;
+    height: 1em;
+    border: 1px solid #9DA3AE;
+    border-radius: 50%;
+}
+input[type="radio"]:checked{
+    background-color: #181818;
+    border-color: #181818;
+}
+
+input.PhoneInputInput {
+    outline: none;
+    background-color: transparent;
+}
+
+#one, #two, #three {
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    width: 1em;
+    height: 1em;
+    border: 1px solid #afafaf;
+    border-radius: 50%;
+}
+#one:checked, #two:checked, #three:checked{
+    background-color: #afafaf;
+}
+
+
+span.word {
+    font-size: 1.4rem !important ;
+    font-family: 'Lowan' !important;
+}
+
+.words-wrapper {
+	white-space: normal !important;
+    text-align: center !important;
+}
+
+@media only screen and (max-width: 650px) {
+    span.word {
+        font-size: 1rem !important ;
+    }
+}
