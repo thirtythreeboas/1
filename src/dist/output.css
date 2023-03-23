@@ -700,6 +700,10 @@ video {
   margin-left: 5rem;
 }
 
+.\!mt-0 {
+  margin-top: 0px !important;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -938,6 +942,10 @@ video {
 
 .overflow-auto {
   overflow: auto;
+}
+
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .rounded-md {
@@ -1624,8 +1632,8 @@ span.word {
     display: block;
   }
 
-  .lg\:h-36 {
-    height: 9rem;
+  .lg\:h-44 {
+    height: 11rem;
   }
 
   .lg\:w-44 {
